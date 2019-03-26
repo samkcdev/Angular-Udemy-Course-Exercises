@@ -1,11 +1,16 @@
-<div class="container">
+<!-- <div class="container">
   <input class="form-control" type="text" [(ngModel)] = "username" placeholder="Enter Username">
   <p>{{username}}</p>
 
   <button class="btn btn-primary" (click)="onResetbtn()" type="button" [disabled]="username === ''">Reset Text</button>
-</div>
+</div> -->
 
+<input type="text" [(ngModel)]="username" />
+<p>{{ username }}</p>
 
+<button (click)="onReset()" [disabled]="username === ''">
+  Click Me
+</button>
 
 <!-- What I learned in exercise -->
 

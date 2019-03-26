@@ -12,7 +12,7 @@ export class DataBindingComponent implements OnInit {
 
    }
 
-   onResetbtn() {
+   onReset() {
     this.username = '';
    }
 
