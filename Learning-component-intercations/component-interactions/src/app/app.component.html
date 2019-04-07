@@ -1,0 +1,12 @@
+<div>
+  {{ message }}
+</div>
+
+<app-child-comp [childElement]="names" (incrementing)="onIncrement($event)">
+  <p>
+    this is between the opening and closing tags of child app component and will
+    be projected using ng-content.
+  </p>
+</app-child-comp>
+
+<div>{{ receivedNumb }}</div>
